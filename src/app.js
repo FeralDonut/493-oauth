@@ -1,5 +1,5 @@
-require('dotenv').config();
-var cors = require('cors');
+// require('dotenv').config();
+// var cors = require('cors');
 // express library exposes a single fucntion used to create a new express application
 const express = require('express');
 const path = require('path');
@@ -12,11 +12,11 @@ console.log(path.join(__dirname, '../public/index.html'));
 // we configure our server by using various methods on the app itself.
 const app = express();
 const port = process.env.PORT || 3000;
-const corsOptions = {
-  origin: '*',
-  optionsSuccessStatus: 200
-}
-app.use(cors(corsOptions));
+// const corsOptions = {
+//   origin: '*',
+//   optionsSuccessStatus: 200
+// }
+// app.use(cors(corsOptions));
 
 // app.options('*', cors());
 // defines path for express config

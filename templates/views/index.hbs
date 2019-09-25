@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Weather</title>
-  <link rel="icon" href="/img/weather.png">
+<title>OAuth</title>
   <link rel="stylesheet" href="/css/styles.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <script>
   var GoogleAuth;
-  var SCOPE = 'https://www.googleapis.com/auth/drive.metadata.readonly';
+  var SCOPE = 'https://people.googleapis.com/v1/people/me?personFields=names,emailAddresses';
   function handleClientLoad() {
     // Load the API's client and auth2 modules.
     // Call the initClient function after the modules load.
